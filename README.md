@@ -198,5 +198,3 @@ for step in tqdm(range(steps)):
 
 ---
 
-This README is now **GitHub-ready!** 🚀 Let me know if you need any modifications! 😊
-
