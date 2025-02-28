@@ -1,5 +1,5 @@
 # **Neural Style Transfer (NST) with VGG19**
-## 🎨 Transfer Artistic Style to Any Image Using Deep Learning
+## Transfer Artistic Style to Any Image Using Deep Learning
 
 This project implements **Neural Style Transfer (NST)**, a deep learning technique that **applies the artistic style of one image (style image) to another (content image)** while preserving the original structure.
 
@@ -7,16 +7,22 @@ The model is based on **VGG19** and uses a combination of **content loss** and *
 
 ---
 
+## **Inputs Preview**
+| Initial Content image | Initial Style Image |
+|:-----------------------------:|:--------------------------------:|
+| ![Content Image](content_cropped.png)      | ![Style Image](style_cropped.png)   |
+
+
 ## **🚀 Results Preview**
 | Step 0 (Initial Random Noise) | Step 7000 (Final Stylized Image) |
 |:-----------------------------:|:--------------------------------:|
 | ![Step 0](result_0.png)       | ![Step 7000](result_7000.png)   |
 
-*🔹 The left image is the initial random noise. The right image is the final stylized version after 7000 iterations.*
+*🔹The left image is the initial random noise. The right image is the final stylized version after 7000 iterations.*
 
 ---
 
-## **📜 Project Overview**
+## **Project Overview**
 ### **1️⃣ How NST Works**
 NST works by optimizing a target image to minimize two types of losses:
 - **Content Loss** – Ensures that the **main structure of the content image** is retained.
@@ -30,7 +36,7 @@ NST works by optimizing a target image to minimize two types of losses:
 
 ---
 
-## **📌 Dependencies**
+## **Dependencies**
 To run the project, install the required Python libraries:
 
 ```bash
@@ -53,7 +59,7 @@ pip install torch torchvision numpy tqdm pillow opencv-python
 
 ---
 
-## **📸 Preparing Your Images**
+## **Preparing Your Images**
 Before applying NST, we need to **crop** and **resize** the images to the same size:
 
 ```python
@@ -79,7 +85,7 @@ crop_it('path/to/content.jpg')
 
 ---
 
-## **🎨 Implementing NST**
+## **Implementing NST**
 ### **1️⃣ Load Pretrained VGG19 for Feature Extraction**
 We load a **pre-trained VGG19 model** but remove the fully connected layers, keeping only the convolutional layers.
 
@@ -191,7 +197,7 @@ for step in tqdm(range(steps)):
 
 ---
 
-## **📜 References**
+## **References**
 - [Original NST Paper (Gatys et al., 2016)](https://arxiv.org/abs/1508.06576)
 - [Fast Style Transfer (Johnson et al., 2016)](https://arxiv.org/abs/1603.08155)
 - [PyTorch NST Tutorial](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
