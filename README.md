@@ -10,10 +10,10 @@ The model is based on **VGG19** and uses a combination of **content loss** and *
 ## **Inputs Preview**
 | Initial Content image | Initial Style Image |
 |:-----------------------------:|:--------------------------------:|
-| ![Content Image](content_cropped.jpg)      | ![Style Image](style_cropped.jpg)   |
+| ![Content Image](content_cropped.jpg)      | ![Style Image](style_crop.jpg)   |
 
 
-## **🚀 Results Preview**
+## **Results Preview**
 | Step 0 (Initial Random Noise) | Step 7000 (Final Stylized Image) |
 |:-----------------------------:|:--------------------------------:|
 | ![Step 0](result_0.png)       | ![Step 7000](result_7000.png)   |
